@@ -69,4 +69,4 @@ func TestDrawTextFormatBytes(t *testing.T) {
 	}
 }
 
-const drawTerminalStr = "0/100\r20/100\r\n"
+const drawTerminalStr = "0/100\n20/100\n\n"
