@@ -44,6 +44,24 @@ func TestDrawTextFormatBar(t *testing.T) {
 	if actual != expected {
 		t.Fatalf("bad: %s", actual)
 	}
+
+	actual = f(0, 0)
+	expected = "[        ]"
+	if actual != expected {
+		t.Fatalf("bad: %s", actual)
+	}
+
+	actual = f(-10, 10)
+	expected = "[        ]"
+	if actual != expected {
+		t.Fatalf("bad: %s", actual)
+	}
+
+	actual = f(20, 10)
+	expected = "[        ]"
+	if actual != expected {
+		t.Fatalf("bad: %s", actual)
+	}
 }
 
 func TestDrawTextFormatBytes(t *testing.T) {
